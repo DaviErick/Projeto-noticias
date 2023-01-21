@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+
+}
+html, body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.container{
+	max-width: 1280px;
+	margin: 25px auto;
+}
+.container .baner img{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+header.head .container nav{
+	float: right;
+	
+}
+header.head .container nav li{
+	float: left;
+	padding: 10px;
+	font-size: 25px;
+	list-style-type: none;
+	text-decoration: none;
+}
+header.head .container nav li a{
+	text-decoration: none;
+	color: gray;
+}
+.container-2{
+	max-width: 1280px;
+}
+section.section-1 .imgsection-1{
+	background-image: url('../images/image-web-3-desktop.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 45%;
+	max-width: 1280px;
+	height: 300px;
+	margin: 75px;
+	float: left;
+}
+section.section-1 .wtf{
+	width:  30%;
+	max-width: 1280px;
+	height: 500px;
+	background-color: rgb(1, 2, 27);
+	float: left;
+	margin-right: 50px;
+}
+section.section-1 .wtf-text > h2{
+	color: #f09048;
+	text-align: left;
+	margin: 30px 20px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+section.section-1 .wtf-text-1{
+	color: white;
+	text-align: left;
+	margin: 15px 20px;
+	font-size: 20px;
+}
+section.section-3 .big-text h2{
+	margin-left: 75px;
+	font-size: 50px;
+	text-transform: uppercase;
+	float: left;
+}
+section.section-3 .big-text p{
+	margin-left: 50px;
+	font-size: 20px;
+	max-width: 300px;
+	float: left;
+	margin-top: 30px;
+}
+.button a{
+	width: 100px;
+	height: 30px;
+	padding: 10px;
+	background-color: red;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	text-decoration-style: none;
+	border: 2px solid black;
+	position: relative;
+	top: 100px;
+}
+.topic-1{
+	width: 33.3%;
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	margin-right: -20px;
+}
+.text-1{
+	width: 33.3%;
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-right: -20px;
+	padding: 25px;
+}
+/* Definição de estilo para telas menores */
+@media only screen and (max-width: 800px) {
+  /* Defina a largura máxima do container como 100% */
+  .container {
+    max-width: 100%;
+  }
+  /* Defina o tamanho da fonte para ser menor em telas menores */
+  h1 {
+    font-size: 24px;
+  }
+  /* Esconda a barra de navegação em telas menores */
+  nav {
+    display: none;
+  }
+  /* Defina a largura da imagem da seção 1 para ser 100% */
+  .imgsection-1 {
+    width: 100%;
+  }
+  /* Defina a largura do texto "notícias" para ser 100% */
+  .wtf-text {
+    width: 100%;
+  }
+  /* Centralize o texto e o botão da seção 3 */
+  .big-text, .button {
+    text-align: center;
+  }
+  /* Defina a largura das imagens dos tópicos para ser 100% */
+  .topic-1, .topic-2, .topic-3 {
+    width: 100%;
+  }
+}
+}
